@@ -1,0 +1,13 @@
+google-cloud-bigquery==3.25.0
+psycopg2
+pandas==2.2.2
+sqlalchemy==2.0.31
+flask
+tqdm==4.66.4
+db_dtypes==1.2.0
+colorama
+python-dotenv
+linkedin-api
+openai
+geopandas
+matplotlib

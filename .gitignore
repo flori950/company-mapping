@@ -1,0 +1,6 @@
+﻿__pycache__
+bigquery/schemes/__init__.py
+crunchbase/__init__.py
+helpers/__init__.py
+env_base.env
+tasks/__init__.py

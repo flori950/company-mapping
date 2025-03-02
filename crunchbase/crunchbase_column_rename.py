@@ -1,0 +1,21 @@
+COLUMN_NAME_MAPPING = {
+    "properties.name": "Name",
+    "properties.linkedin.value": "LinkedIn_Link",
+    "properties.facebook.value": "Facebook_Link",
+    "properties.short_description": "Short_Description",
+    "properties.created_at": "Creation_Date",
+    "properties.identifier.permalink": "Permalink",
+    "properties.identifier": "Identifier",
+    "properties.website_url": "Website_URL",
+    "properties.facet_ids": "Facet_IDs",
+    "properties.identifier.uuid": "UUID",
+    "properties.twitter.value": "Twitter_Link",
+    "properties.identifier.image_id": "Image_ID",
+    "properties.updated_at": "Updated_Date",
+    "properties.identifier.entity_def_id": "Entity_Type",
+    "properties.image_url": "Image_URL",
+    "properties.location_identifiers": "Location_Identifiers",
+    "properties.stock_exchange_symbol": "Stock_Exchange_Symbol",
+    "properties.rank_org": "Rank_Org",
+    "dwh_partitiondate": "Partition_Date"
+}
