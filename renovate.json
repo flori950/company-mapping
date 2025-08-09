@@ -1,0 +1,55 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":dependencyDashboard",
+    ":semanticCommits",
+    ":automergeDigest",
+    "group:monorepos",
+    "group:recommended",
+    "workarounds:all"
+  ],
+  "timezone": "UTC",
+  "schedule": [
+    "before 6am on monday"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "assigneesFromCodeOwners": true,
+  "reviewersFromCodeOwners": true,
+  "pip_requirements": {
+    "fileMatch": ["requirements\\.txt$", "requirements/.+\\.txt$"]
+  },
+  "packageRules": [
+    {
+      "groupName": "Python dependencies",
+      "matchManagers": ["pip_requirements"],
+      "schedule": [
+        "before 6am on monday"
+      ]
+    },
+    {
+      "groupName": "Security updates",
+      "matchPackagePatterns": [".*"],
+      "matchUpdateTypes": ["patch"],
+      "labels": ["security"],
+      "automerge": true,
+      "schedule": ["at any time"]
+    },
+    {
+      "groupName": "Major updates",
+      "matchUpdateTypes": ["major"],
+      "schedule": [
+        "before 6am on the first day of the month"
+      ],
+      "labels": ["major-update"],
+      "reviewers": ["@me"]
+    }
+  ],
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 2,
+  "enabledManagers": [
+    "pip_requirements"
+  ]
+}
