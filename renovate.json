@@ -25,9 +25,7 @@
     {
       "groupName": "Python dependencies",
       "matchManagers": ["pip_requirements"],
-      "schedule": [
-        "before 6am on monday"
-      ]
+      "schedule": ["at any time"]
     },
     {
       "groupName": "Security updates",
