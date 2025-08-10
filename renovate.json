@@ -3,6 +3,7 @@
   "extends": [
     "config:base",
     ":dependencyDashboard",
+    ":disableDependencyDashboard",
     ":semanticCommits",
     ":automergeDigest",
     "group:monorepos",
@@ -49,5 +50,12 @@
   "prHourlyLimit": 2,
   "enabledManagers": [
     "pip_requirements"
+  ],
+  "suppressNotifications": ["prIgnoreNotification"],
+  "hostRules": [
+    {
+      "matchHost": "github.com",
+      "silent": false
+    }
   ]
 }
