@@ -1,4 +1,4 @@
-# Circular Economic Start-Ups Masterthesis Florian Jäger
+# Circular Economic Company Florian Jäger
 
 # Table of Contents
 
