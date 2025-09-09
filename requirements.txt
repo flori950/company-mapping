@@ -1,4 +1,4 @@
-google-cloud-bigquery==3.36.0
+google-cloud-bigquery==3.37.0
 psycopg2==2.9.10
 pandas==2.3.2
 sqlalchemy==2.0.43
