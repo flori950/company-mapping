@@ -10,4 +10,4 @@ python-dotenv==1.2.1
 linkedin-api==2.3.1
 openai==2.9.0
 geopandas==1.1.1
-matplotlib==3.10.7
+matplotlib==3.10.8
